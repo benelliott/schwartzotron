@@ -1,5 +1,8 @@
-var createName = function(){
-	return capitaliseFirst(createWord(true)) + ' ' + capitaliseFirst(createWord(false));
+var createName = function(punctuate){
+    if (punctuate)
+	    return capitaliseFirst(createWord(true)) + '... ' + capitaliseFirst(createWord(false)) + '!';
+    else
+        return capitaliseFirst(createWord(true)) + ' ' + capitaliseFirst(createWord(false));
 };
 
 var createWord = function(firstName) {
