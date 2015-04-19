@@ -7,5 +7,5 @@ $('.button').click(function(){
 });
 
 var updateName = function(){
-    $('.name').text(createName(true));
+    $('.name').text(getSchwartzName(true));
 };
