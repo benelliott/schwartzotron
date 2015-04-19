@@ -11,7 +11,7 @@ var createWord = function(firstName) {
 	for (var i = 0; i < syllables; i++) {
 		word += getNoise();
 		if (firstName && i == extend) {
-			word += repeat(getVowel(), 4);		
+			word += repeat(getVowel(), 4);
 		}
 		else
 			word += getVowel();
@@ -22,7 +22,7 @@ var createWord = function(firstName) {
 
 var noises = ['ch', 'sh', 'p', 'f', 'b', 'z', 's', 'g', 'y', 'ph', 'r', 'd', 'l', 'm', 'n', 't', 'w'];
 
-var getNoise = function() {	
+var getNoise = function() {
 	var index = Math.floor(Math.random() * noises.length);
 	return noises[index];
 };
@@ -45,5 +45,3 @@ var repeat = function(string, reps) {
 var capitaliseFirst = function(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
-
-console.log(createName());
