@@ -1,0 +1,9 @@
+{
+  "name": "schwartzotron_demo",
+  "authors": [
+    "benelliott <bengelliott@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
